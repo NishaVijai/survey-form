@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>A Survey Form</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <form id="survey-form">
+      <fieldset>      
+        <label id="name-label" for="name">
+          Name
+          <input id="name" type="text" placeholder="Enter your name" required></label>
+        <label id="email-label" for="email">
+          Email
+          <input id="email" type="email" placeholder="Enter your email" required></label>
+        <label id="number-label" for="number">
+          Age (optional)
+          <input id="number" type="number" min="13" max="120" placeholder="Age"></label>
+      </fieldset>
+
+      <fieldset>
+        <label for="dropdown">What is your occupation?</label>
+        <select id="dropdown">
+          <option value="">Select an option</option>
+          <option value="1">FreeCodeCamp student</option>
+          <option value="2">Student</option>
+          <option value="3">Learner</option>
+          <option value="4">Full time Learner</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <label for="definitely"><input class="custom-style" id="definitely" type="radio" name="recommandation" value="definitely">Definitely</label>
+        <label for="maybe"><input class="custom-style" id="maybe" type="radio" name="recommandation" value="maybe">Maybe</label>
+        <label for="not-sure"><input class="custom-style" id="not-sure" type="radio" name="recommandation" value="not-sure">Not sure</label>
+      </fieldset>
+
+      <fieldset>
+        <label for="frontend"><input class="custom-style" id="frontend" type="checkbox" value="frontend-projects">Front-end Projects</label>
+        <label for="backend"><input class="custom-style" id="backend" type="checkbox" value="backend-projects">Back-end Projects</label>
+        <label for="challenges"><input class="custom-style" id="challenges" type="checkbox" value="challenges">Challenges</label>
+        <label for="videos"><input class="custom-style" id="videos" type="checkbox" value="videos">Videos</label>
+        <label for="forum"><input class="custom-style" id="forum" type="checkbox" value="forum">Forum</label>
+        <label for="wiki"><input class="custom-style" id="wiki" type="checkbox" value="wiki">Wiki</label>
+      </fieldset>
+
+      <fieldset>
+        <label for="comment-textarea">Any comments or suggestions</label>
+        <textarea id="comment-textarea" rows="5" cols="50" placeholder="Enter your comment here..."></textarea>
+      </fieldset>
+
+      <button id="submit" type="submit">Submit</button>
+    </form>
+  </body>
+</html>
